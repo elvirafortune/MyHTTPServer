@@ -20,10 +20,10 @@ public class Server {
     }
 
     public void start() throws Throwable {
-        MyExecutorService workQueue = new MyExecutorService(Runtime.getRuntime().availableProcessors());
+        MyExecutorService myExecutorService = new MyExecutorService(Runtime.getRuntime().availableProcessors());
         while (true) {
             Socket socket = this.serverSocket.accept();
-            workQueue.execute(new HTTPconnector(socket));
+            myExecutorService.execute(new HTTPconnector(socket));
         }
     }
 

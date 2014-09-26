@@ -26,9 +26,4 @@ public class HTTPconnector implements Runnable{
             }
             System.err.println("Client processing finished");
         }
-
-        /**
-         * Считывает заголовок сообщения от клиента.
-         */
-
   }

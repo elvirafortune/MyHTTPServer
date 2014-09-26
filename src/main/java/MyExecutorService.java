@@ -44,8 +44,7 @@ public class MyExecutorService {
                 try {
                     r.run();
                 } catch (RuntimeException e) {
-                    // You might want to log something here
-                }
+                 }
             }
         }
     }
